@@ -6,12 +6,14 @@ footerYear.textContent = new Date().getFullYear();
 const themeToggleBtn = document.getElementById("theme-toggle");
 const currentTheme = localStorage.getItem("theme")
 
-// check for previous user preference
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-  if (currentTheme === "dark") {
-    themeToggleBtn.textContent = "☀️";
-  }
+const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+if (currentTheme === "dark" || (!currentTheme && prefersDarkTheme)) {
+  document.documentElement.setAttribute("data-theme", "dark");
+  themeToggleBtn.textContent = "☀️";
+} else {
+  document.documentElement.setAttribute("data-theme", "light");
+  themeToggleBtn.textContent = "🌙";
 }
 
 themeToggleBtn.addEventListener("click", () => {
@@ -27,7 +29,3 @@ themeToggleBtn.addEventListener("click", () => {
     themeToggleBtn.textContent = "☀️";
   }
 })
-
-
-
-
