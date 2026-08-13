@@ -1,3 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Favour Alofe, a Third-Year Computer Science (BSc) student at Wilfrid Laurier University.">
+  <title>Favour Alofe | Software Engineer</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo"><a href="#">FA</a></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#workshop">Workshop</a>
+        <a href="mailto:favoralofe@gmail.com">Contact Me</a>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <p class="mono-text greeting">Hello, I'm</p>
+      <h1>Favour Alofe</h1>
+      <h2>Computer Science Student & Aspiring Systems Engineer</h2>
+      <p class="bio">
+        Third-Year Computer Science (BSc) Student @ Wilfrid Laurier University with a passion for backend
+        development, systems programming, and digital craftsmanship.
+      </p>
+      <a href="./Favour_Alofe_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary">View Resume
+        (PDF)</a>
+    </section>
+
+    <hr>
+
+    <section id="experience">
+      <h3>Experience & Education</h3>
+      <div class="card">
+        <h4>Wilfrid Laurier University - Computer Science (BSc)</h4>
+        <p class="mono-text date">Expected Graduation: 2028</p>
+        <p>Currently entering my third year, focusing on data structures, algorithms, and systems-level programming.</p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="workshop">
+      <h3>In The Workshop</h3>
+      <p class="subtitle">Currently building...</p>
+
+      <div class="project-grid">
+        <div class="card">
+          <h4>Unix Shell</h4>
+          <p class="mono-text tech-stack">C</p>
+          <p>Developing a custom command-line interpreter from scratch to deepen my understanding of operating systems,
+            process management, and system calls.</p>
+        </div>
+
+        <div class="card">
+          <h4>Kairos - Liturgical & Religious Calendar App</h4>
+          <p class="mono-text tech-stack">Java, Spring Boot, Redis, Docker, REST API</p>
+          <p>Designing a calendar application that tracks liturgical years and feast days across different
+            denominations.
+          </p>
+          <a href="https://github.com/FavourAlofe/kairos_app" target="_blank" rel="noopener noreferrer"
+            class="btn-primary btn-small">View Code</a>
         </div>
       </div>
     </section>
