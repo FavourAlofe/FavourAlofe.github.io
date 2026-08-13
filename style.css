@@ -32,7 +32,7 @@ body {
   font-family: "Atkinson Hyperlegible", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -104,6 +104,7 @@ nav {
   color: var(--accent-color);
 }
 
+
 #theme-toggle {
   background: none;
   border: none;
@@ -154,7 +155,7 @@ hr {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -205,5 +206,17 @@ footer {
 }
 
 .social-links a:hover {
-  color: var(--link-color);
+  color: var(--accent-color);
 }
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    margin: 0 0.5rem;
+  }
+
+  h1 {
