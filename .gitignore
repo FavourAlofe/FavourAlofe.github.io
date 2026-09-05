@@ -1,0 +1,5 @@
+.env
+*.env
+node_modules/
+portfolio_instructions.md
+Favour_Alofe_Resume.pdf
